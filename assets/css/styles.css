@@ -1,0 +1,98 @@
+/* Estilizando o menu principal */
+.menu {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    background-color: #000000;
+    padding: 3px;
+}
+
+.menu li {
+    position: relative;
+    margin: 0.5px;
+}
+
+.menu a {
+    text-transform: bold;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Estilizando o submenu */
+.submenu {
+    
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #000000;
+    list-style: none;
+    padding: 0;
+    width: 215px;
+    box-shadow: 0px 4px 6px rgba(10, 10, 10, 0.5%);
+
+    /* Animação para abrir suavemente */
+    opacity: 0.5;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.submenu li {
+    width: 90%;
+}
+
+.submenu a {
+    padding: 3px;
+    width: 100%;
+}
+
+/* Exibe o submenu quando passa o mouse */
+.dropdown:hover .submenu {
+    opacity: 0.75;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.side-menu {
+    position: absolute;
+    top: -50;
+    left: 100%;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+    /* Animação para abrir suavemente */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+   
+.background-motorium{
+    position: absolute;
+    top: 40%;
+    left: 300px;
+    background-image: url(../img/motorium.jpg);
+    background-size: center;
+    background-position: center;
+    background-attachment: absolute;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: static;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+   color: whitesmoke;
+}
+
