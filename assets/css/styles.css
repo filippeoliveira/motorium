@@ -94,5 +94,7 @@
     align-items: center;
     font-size: 2em;
    color: whitesmoke;
+   min-width: 600px;
+   width: 50%;
 }
 
